@@ -15,18 +15,22 @@ grocery-shop/
 │   └── src/
 │       ├── assets/                # Grocery images (milk.jpg, bread.jpg, etc.)
 │       ├── components/            # Reusable components
-│       │   ├── CartItem.jsx
-│       │   ├── GroceryCard.jsx
 │       │   ├── GroceryList.jsx
 │       │   ├── LoginForm.jsx
 │       │   ├── Navbar.jsx
 │       │   └── SignupForm.jsx
+        │   └── AdminSignupForm.jsx
+        │   └── AdminLoginForm.jsx
 │       ├── context/               # Cart Context API
 │       │   └── CartContext.jsx
+        │   └── Usecart.jsx
 │       ├── pages/                 # Page-level components
 │       │   ├── Home.jsx
-│       │   ├── Login.jsx
-│       │   └── Signup.jsx
+        │   └── AdminDashboard.jsx
+        │   └── AdminSignup.jsx
+        │   └── AdminLogin..jsx
+│       │   ├── CombinedLogin.jsx
+│       │   └── CombinedSignup.jsx
         |   |___Cart.jsx
 |       |   |___Orderlist.jsx
 │       ├── styles/                # CSS files
@@ -38,16 +42,20 @@ grocery-shop/
 │   ├── config/
 │   │   └── db.js                  # MongoDB connection setup
 │   ├── controllers/
+        ├── adminController.js  
 │   │   ├── authController.js      # Login & signup logic
 │   │   ├── cartController.js      # Cart add/remove
 │   │   └── groceryController.js   # Grocery CRUD
 │   ├── middleware/
+        └── adminMiddleware.js 
 │   │   └── authMiddleware.js      # JWT verification
 │   ├── models/
+        └── Admin.js
 │   │   ├── CartItem.js
 │   │   ├── GroceryItem.js
 │   │   └── User.js
 │   ├── routes/
+         ├── adminRoutes.js
 │   │   ├── authRoutes.js
 │   │   ├── cartRoutes.js
 │   │   └── groceryRoutes.js
